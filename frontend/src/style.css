@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "PingFang SC", sans-serif;
+  background-color: #f0f2f5;
+  color: #303133;
+  font-size: 14px;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* 经典简单居中课设登录页 */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d3a4b;
+  padding: 20px;
+}
+
+.login-box {
+  width: 400px;
+  max-width: 100%;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 32px 30px 26px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.login-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #303133;
+  margin-bottom: 22px;
+}
+
+.quick-demo-panel {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px dashed #dcdfe6;
+}
+
+.quick-demo-title {
+  font-size: 12px;
+  color: #909399;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.quick-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+/* 朴素经典课设左右布局 */
+.admin-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  width: 210px;
+  background-color: #304156;
+  color: #bfcbd9;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #263445;
+}
+
+.admin-sidebar .el-menu {
+  border-right: none;
+  background-color: #304156;
+}
+
+.admin-sidebar .el-menu-item {
+  color: #bfcbd9;
+}
+
+.admin-sidebar .el-menu-item:hover {
+  background-color: #263445;
+}
+
+.admin-sidebar .el-menu-item.is-active {
+  color: #409eff;
+  background-color: #1f2d3d;
+}
+
+.admin-main-wrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-topbar {
+  height: 54px;
+  background: #ffffff;
+  border-bottom: 1px solid #e4e7ed;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-content {
+  padding: 18px;
+  flex: 1;
+}
+
+/* 通用业务表格卡片 */
+.page-card {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  border: 1px solid #ebeef5;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ebeef5;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.page-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #303133;
+}
+
+.page-subtitle {
+  display: none;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #303133;
+  margin-bottom: 4px;
+}
+
+.stat-content p {
+  font-size: 13px;
+  color: #909399;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.stat-icon.primary { background: #ecf5ff; color: #409eff; }
+.stat-icon.success { background: #f0f9eb; color: #67c23a; }
+.stat-icon.warning { background: #fdf6ec; color: #e6a23c; }
+.stat-icon.info { background: #f4f4f5; color: #909399; }
+
+.price-text { font-weight: 600; color: #f56c6c; }
+.danger-num { font-weight: 600; color: #f56c6c; }
+.success-num { font-weight: 600; color: #67c23a; }
+
+.book-detail-sheet {
+  border: 1px solid #ebeef5;
+  font-size: 13.5px;
+}
+
+.book-detail-row {
+  display: flex;
+  border-bottom: 1px solid #ebeef5;
+}
+
+.book-detail-row:last-child { border-bottom: none; }
+
+.book-detail-label {
+  width: 90px;
+  background: #fafafa;
+  color: #606266;
+  padding: 8px 12px;
+  border-right: 1px solid #ebeef5;
+}
+
+.book-detail-val {
+  flex: 1;
+  padding: 8px 12px;
+}
+
+.pagination-wrapper {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
